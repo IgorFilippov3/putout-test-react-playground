@@ -1,0 +1,6 @@
+{
+    "rules": {
+        "putout": "on",
+        "remove-console": "off"
+    }
+}
