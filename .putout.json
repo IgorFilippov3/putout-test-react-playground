@@ -1,0 +1,10 @@
+{
+    "rules": {
+        "putout": "on"
+    },
+    "match": {
+        "lib/index.js": {
+            "remove-console": "off"
+        }
+    }
+}

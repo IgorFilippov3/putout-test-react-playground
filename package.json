@@ -1,15 +1,38 @@
 {
   "name": "putout-playground",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "prepublishOnly": "madrun prepublishOnly",
+    "start": "madrun start",
+    "test": "madrun test",
+    "watch:test": "madrun watch:test",
+    "lint": "madrun lint",
+    "fresh:lint": "madrun fresh:lint",
+    "lint:fresh": "madrun lint:fresh",
+    "fix:lint": "madrun fix:lint",
+    "coverage": "madrun coverage",
+    "report": "madrun report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "putout": "^28.13.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@putout/plugin-putout": "^11.14.0",
+    "@putout/test": "^5.11.0",
+    "c8": "^7.12.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-putout": "^16.3.0",
+    "madrun": "^9.0.7"
   }
 }
